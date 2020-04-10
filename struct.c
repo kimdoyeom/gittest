@@ -20,7 +20,7 @@ int main(){
     printf("st1.grade = %c\n", st1.grade); 
 
  
-    student2 st2 = {'B', 200, 'B'}; //해당 문장은 왜 구조체가 없냐? 12줄에서 이미 선언을 해주었다!!
+    student2 st2 = {'B', 200, 'B'}; //해당 문장은 왜 구조체가 없냐? 구조체 선언 당시 typedef를 붙이면 따로 자료형을 쓰지 않아도 된다.
  
     printf("\nst2.lastName = %c\n", st2.lastName); 
     printf("st2.studentId = %d\n", st2.studentId); 
