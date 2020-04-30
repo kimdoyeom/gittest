@@ -190,7 +190,7 @@ int insertNode(headNode* h, int key) {
  * list에 key에 대한 노드하나를 추가
  */
 int insertLast(headNode* h, int key) {
-    if ((h->first == NULL) || (h->first->key >= key)) {
+    if ((h->first == NULL)) {
         insertFirst(h, key);
     }
 
