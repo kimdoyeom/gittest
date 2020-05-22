@@ -40,7 +40,9 @@ int main()
 	int key;
 	Node* head = NULL;
 	Node* ptr = NULL;	/* temp */
-
+	
+	printf("------- [2019038066] [kimdoyeom] -------");
+	
 	do {
 		printf("\n\n");
 		printf("----------------------------------------------------------------\n");
