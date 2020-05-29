@@ -52,7 +52,7 @@ int main()
 	char command;
 	int key;
 	Node* head = NULL;
-  printf("------- [2019038066]  [Kim Do Yeom] -------");
+	printf("------- [2019038066] [Kim Do Yeom] -------");
 	do {
 		printf("\n\n");
 		printf("----------------------------------------------------------------\n");
@@ -297,7 +297,7 @@ int deleteNode(Node* head, int key)
 			if (L->right != NULL)
 			{
 				Node* q = L->right;
-				L = q;
+				r->left = q;
 				free(L); //원래 L자리를 초기화
 				return 1;
 			}
@@ -330,9 +330,9 @@ int deleteNode(Node* head, int key)
 		//가장 오른쪽이 키값노드 왼쪽일 때
 		if (r == NULL)
 		{
-			Node* q = node->left;
-			q->right = node->right;
-			p->left = q;
+			if (i == 0) p->right = node->left;
+			if (i == 1) p->left = node->left;
+
 			free(node);
 			
 			return 1;
